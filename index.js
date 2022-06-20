@@ -1,4 +1,5 @@
 const fs = require('fs');
+//const path = require('path')
 
 const mdLinks = (arquivo) => {
   const linkRegex = /\[([^\]]*)\]\(https?:\/\/[^$#\s].[^\s]*\)/gm;
@@ -15,12 +16,10 @@ const mdLinks = (arquivo) => {
           const strObject = {
             text: arrLink[0],
             link: arrLink[1],
-            file: arquivo,
+            arquivo: arquivo,
           };
-          console.log(strObject);
+          return resolve(console.log(strObject))
         })
-
-        resolve(console.log())
       }
     })
   })
@@ -32,18 +31,4 @@ function error(erro) {
 
 module.exports = mdLinks
 
-// function error(erro) {
-//   throw new Error(erro.code, "Não há arquivo no caminho")
-// }
 
-// function pegarArquivo(caminhoDoArquivo) {
-//   fs.readFile(caminhoDoArquivo, 'utf8', (erro, texto) => {
-//     if (erro) {
-//       error(erro)
-//     }
-//     console.log(texto)
-//   })
-// }
-
-// pegarArquivo('./README.md');
-''
