@@ -4,13 +4,14 @@
   "engines": {
     "node": ">=14.x"
   },
-  "description": "* [1. Prefácio](#1-prefácio)\r * [2. Resumo do projeto](#2-resumo-do-projeto)\r * [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)\r * [4. Considerações gerais](#4-considerações-gerais)\r * [5. Critérios de aceitação mínimos do projeto](#5-criterios-de-aceitação-mínimos-do-projeto)\r * [6. Entregáveis](#6-entregáveis)\r * [7. Hacker edition](#7-hacker-edition)\r * [8. Guias, dicas e leituras complementares](#8-guias-dicas-e-leituras-complementares)\r * [9. Checklist](#9-checklist)\r * [10. Dividindo o problema - babies steps](#10-dividindo-o-problema)",
+  "description": "biblioteca que retornará links dentro de aquivos do tipo .md",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cli": "node cli.js ./README.md"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/dayanersilva/SAP007-md-links/issues"
   },
-  "homepage": "https://github.com/dayanersilva/SAP007-md-links#readme"
+  "homepage": "https://github.com/dayanersilva/SAP007-md-links#readme",
+  "dependencies": {
+    "jest": "^28.1.1"
+  }
 }

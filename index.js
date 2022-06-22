@@ -18,7 +18,7 @@ const mdLinks = (arquivo) => {
             link: arrLink[1],
             arquivo: arquivo,
           };
-          return resolve(console.log(strObject))
+          return resolve(strObject);
         })
       }
     })
@@ -29,6 +29,7 @@ function error(erro) {
   throw new Error(erro.code, "Não há arquivo no caminho")
 }
 
+//mdLinks('./README.md')
 module.exports = mdLinks
 
 
